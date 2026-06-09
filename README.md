@@ -29,7 +29,7 @@ Upon executing an unauthenticated access sequence targeting non-existent system 
 To cross-reference host logs with raw network data, the packet capture stream was isolated using the display filter string `ssh`. 
 
 ### Packet Analysis Evidence
-![Network Packet Capture](Wireshark capture.png)
+![Network Packet Capture](Wireshark_capture.png)
 
 **Forensic Findings:**
 The network layer directly mirrors the endpoint telemetry. The packet analysis shows an accelerated sequence of raw TCP handshakes and key exchange initializations targeting Port 22. The automated nature of the connection requests—occurring systematically within milliseconds—indicates non-human script activity rather than a standard user authentication error.
